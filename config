@@ -1,0 +1,4 @@
+[module/bitfinex]
+type = custom/script
+exec = node $HOME/.config/polybar/wallet-sum.js
+interval = 60
