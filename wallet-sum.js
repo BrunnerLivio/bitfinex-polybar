@@ -83,10 +83,12 @@ const getWalletSum = () => {
  * @returns {String} The icon
  */
 getIconFromSum = sum => {
-    if (!lastSum) {
-        return '';
+    let icon = '';
+    if (lastSum) {    
+       icon = sum > lastSum ? '▲' : (sum < lastSum ? '▼' : '=');
     }
-    return sum > lastSum ? '▲' : (sum < lastSum ? '▼' : '=');
+    lastSum = sum;
+    return icon;
 };
 
 /**

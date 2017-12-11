@@ -1,19 +1,32 @@
 # bitfinex-polybar
 
-Bitfinex module for polybar
+Bitfinex module for Polybar. It shows your total Bitfinex deposit in dollars.
 
-## Install
+## Dependencies
+
+- NodeJS 8.x.x
+- polybar
+
+## Installation
 
 ```bash
+
+git clone https://github.com/BrunnerLivio/bitfinex-polybar.git
 cd bitfinex-polybar
+
+# Edit Keys. Get API keys from your Bitfinex Account
+mv keys.json.template keys.json
+vi keys.json
+
+# Download NodeJS dependencies
 npm install
 
+# Install files
 cat config >> $HOME/.config/polybar/config
 cp package.json $HOME/.config/polybar/
 cp wallet-sum.js $HOME/.config/polybar/
 cp -rf node_modules $HOME/.config/polybar/
 ```
-
 
 ## Run in shell
 
