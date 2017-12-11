@@ -86,7 +86,7 @@ const getWalletSum = () => {
 getIconFromSum = sum => {
     let icon = '';
     if (lastSum) {    
-       icon = sum > lastSum ? '▲' : (sum < lastSum ? '▼' : '=');
+       icon = sum > lastSum ? '%{F#19b719}▲' : (sum < lastSum ? '%{F#f40707}▼' : '=');
     }
     lastSum = sum;
     return icon;
