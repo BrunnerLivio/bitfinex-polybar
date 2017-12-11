@@ -1,6 +1,9 @@
 # bitfinex-polybar
 
+![Screenshot](https://i.imgur.com/W5ziQtJ.png)
+
 Bitfinex module for Polybar. It shows your total Bitfinex deposit in dollars.
+
 
 ## Dependencies
 
