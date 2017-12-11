@@ -24,7 +24,7 @@ npm install
 # Install files
 cat config >> $HOME/.config/polybar/config
 cp package.json $HOME/.config/polybar/
-cp wallet-sum.js $HOME/.config/polybar/
+cp index.js $HOME/.config/polybar/wallet-sum.js
 cp -rf node_modules $HOME/.config/polybar/
 ```
 
