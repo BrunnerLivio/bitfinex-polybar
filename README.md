@@ -34,5 +34,5 @@ cp -rf node_modules $HOME/.config/polybar/
 ## Run in shell
 
 ```bash
-watch -n 60 "node wallet-sum.js"
+node index.js
 ```
