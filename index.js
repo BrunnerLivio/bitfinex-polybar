@@ -4,6 +4,7 @@ const keys = require('./keys.json');
 
 const API_KEY = keys.API_KEY;
 const API_SECRET = keys.API_SECRET;
+const UPDATE_INTERVAL = parseFloat(keys.UPDATE_INTERVAL) || 60;
 
 const bfxRest = new BFX(API_KEY, API_SECRET, { version: 1 }).rest;
 
@@ -105,9 +106,11 @@ const formatSum = sum => {
  * Runs the program
  */
 const run = () => {
-    getWalletSum()
-        .then(sum => console.log(formatSum(sum)))
-        .catch(console.err);
+    setInterval(() => {
+        getWalletSum()
+            .then(sum => console.log(formatSum(sum)))
+            .catch(console.err);
+    }, 1000 * UPDATE_INTERVAL);
 };
 
 
