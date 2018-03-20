@@ -29,9 +29,20 @@ cat config >> $HOME/.config/polybar/config
 cp package.json $HOME/.config/polybar/
 cp index.js $HOME/.config/polybar/wallet-sum.js
 cp -rf node_modules $HOME/.config/polybar/
+cp -rf keys.json $HOME/.config/polybar/
 ```
 
+Reload the polybar ($MOD + SHIFT + R).
+
 ## Run in shell
+
+If you want to run it after the installation,
+do not forget to run `cd $HOME/.config/polybar`.
+
+Otherwise, if you want to run it inside the
+development environment, only run the
+followign command. Do not forget to
+edit the `keys.json`.
 
 ```bash
 node index.js
