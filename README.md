@@ -41,7 +41,7 @@ do not forget to run `cd $HOME/.config/polybar`.
 
 Otherwise, if you want to run it inside the
 development environment, only run the
-followign command. Do not forget to
+following command. Do not forget to
 edit the `keys.json`.
 
 ```bash
